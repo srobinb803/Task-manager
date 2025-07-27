@@ -1,0 +1,17 @@
+[
+  {
+    "id": "todo-1a2b3c",
+    "name": "go to gym",
+    "completed": true
+  },
+  {
+    "id": "todo-4d5e6f",
+    "name": "breakfast",
+    "completed": false
+  },
+  {
+    "id": "todo-7g8h9i",
+    "name": "Read a book",
+    "completed": false
+  }
+]
