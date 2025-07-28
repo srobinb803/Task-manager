@@ -1,54 +1,98 @@
-# React + TypeScript + Vite
+# 📋 Task Manager 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Site-green?style=flat)](https://tasks-orpin-gamma.vercel.app/)
+[![React](https://img.shields.io/badge/React-18-61DAFB?style=flat-square&logo=react&logoColor=white)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Vite](https://img.shields.io/badge/Vite-5.0-646CFF?style=flat-square&logo=vite&logoColor=white)](https://vitejs.dev/)
 
-Currently, two official plugins are available:
+A modern, responsive task management application built with React and TypeScript. 🚀
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- ✅ **Task Management**: Create, edit, delete, and mark tasks as complete
+- 🔍 **Smart Filtering**: Filter tasks by All, Active, or Completed status
+- ⏰ **Reminders**: Set datetime reminders with browser notifications
+- 🌙 **Theme Toggle**: Switch between light and dark modes
+- 💾 **Persistent Storage**: Tasks and preferences saved to localStorage
+- ♿ **Accessibility**: Full keyboard navigation and screen reader support
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Getting Started
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### 📋 Prerequisites
+
+- Node.js (v14 or higher)
+- npm or yarn
+
+### 📦 Installation
+
+1. Clone the repository
+```bash
+git clone https://github.com/srobinb803/Task-manager.git
+cd task-manager
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+2. Install dependencies
+```bash
+npm install
 ```
+
+3. Start the development server
+```bash
+npm run dev
+```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+## 📖 Usage
+
+### ⚡ Basic Operations
+- ➕ **Add Task**: Type in the input field and click "Add" or press Enter
+- ✔️ **Complete Task**: Click the checkbox next to any task
+- ✏️ **Edit Task**: Click the "Edit" button, modify the text, and save
+- 🗑️ **Delete Task**: Click the delete (trash) icon
+- 🧹 **Clear All**: Remove all tasks at once
+
+### ⏰ Reminders
+- Click "Remind me" on any task 📝
+- Grant notification permissions when prompted 🔔
+- Select a future date and time 📅
+- Receive browser notifications when reminders trigger 📢
+
+### 🔍 Filtering
+Use the filter buttons to view:
+- 📋 **All**: Display all tasks
+- 🔄 **Active**: Show only incomplete tasks
+- ✅ **Completed**: Show only finished tasks
+
+### 🎨 Theme
+Toggle between light and dark modes using the theme button in the header. 🌙☀️
+
+## 🛠️ Technology Stack
+
+- ⚛️ **React 18** with TypeScript
+- ⚡ **Vite** for build tooling
+-  ▲  **Vercel** for deployment and hosting
+- 🆔 **nanoid** for unique ID generation
+- 🎨 **CSS Custom Properties** for theming
+- 🔔 **Web Notifications API** for reminders
+
+## 🌐 Browser Compatibility
+
+- 🌐 Chrome/Edge (v89+)
+- 🦊 Firefox (v87+)
+- 🧭 Safari (v14+)
+
+⚠️ Note: Notification features require HTTPS in production.
+
+## 💾 Data Storage
+
+All tasks and user preferences are stored locally in the browser. No external database or server required. 🔒
+
+## 🤝 Contributing
+
+1. 🍴 Fork the repository
+2. 🌟 Create a feature branch
+3. 💻 Commit your changes
+4. 📤 Push to the branch
+5. 🔄 Open a Pull Request
+
